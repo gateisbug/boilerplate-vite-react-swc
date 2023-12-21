@@ -1,0 +1,20 @@
+html, body {
+  min-width: 100%;
+  min-height: 100vh;
+
+  font-size: 16px;
+  color: #18181F;
+  background-color: #FAFAFA;
+  box-sizing: border-box;
+
+  -webkit-text-size-adjust : none;
+  -ms-text-size-adjust : none;
+  -moz-text-size-adjust : none;
+  text-size-adjust : none;
+}
+
+#root {
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 48px;
+}

@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "useDefineForClassFields": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    // "typeRoots": ["src/type"],
+    "types": ["vite/client"],
+
+    /* Bundler mode */
+    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "outDir": "build",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Path */
+    "paths": {
+      "@src/*": ["src/*"],
+      "@assets/*": ["src/assets/*"],
+      "@assets": ["src/assets/index.ts"],
+      "@components/*": ["src/components/*"],
+      "@components": ["src/components/index.ts"],
+      "@hooks/*": ["src/hooks/*"],
+      "@hooks": ["src/hooks/index.ts"],
+      "@pages/*": ["src/pages/*"],
+      "@pages": ["src/pages/index.ts"],
+      "@stores/*": ["src/stores/*"],
+      "@stores": ["src/stores/index.ts"],
+      "@styles/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"],
+      "@utils": ["src/utils/index.ts"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "build", "postcss.config.js"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
